@@ -3,13 +3,13 @@
 	"id": "fantasia",
 	"version": "${version}",
 	"name": "Fantasia of Medievalism",
-	"description": "This is a Fantasia of Medievalism minecraft mod.",
+	"description": "This is a Minecraft mod for Fabric port.",
 	"authors": [
 		"Scorpio4938"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Scorpio4938/Fantasia-of-Medievalism",
+		"sources": "https://github.com/Scorpio4938/Fantasia-of-Medievalism"
 	},
 	"license": "MIT",
 	"icon": "assets/fantasia/icon.png",
