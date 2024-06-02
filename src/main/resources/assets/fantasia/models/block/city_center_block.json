@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/oak_planks",
+    "east": "fantasia:block/city_center_block_side",
+    "north": "fantasia:block/city_center_block_front",
+    "particle": "fantasia:block/city_center_block_front",
+    "south": "fantasia:block/city_center_block_side",
+    "up": "fantasia:block/city_center_block_top",
+    "west": "fantasia:block/city_center_block_front"
+  }
+}

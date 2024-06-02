@@ -1,5 +1,6 @@
 package com.scorpio4938.fantasia;
 
+import com.scorpio4938.fantasia.block.ModBlocks;
 import com.scorpio4938.fantasia.item.ModItemGroup;
 import com.scorpio4938.fantasia.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -23,5 +24,6 @@ public class Fantasia implements ModInitializer {
         LOGGER.info("Hello Fabric world!");
         ModItems.registerModItems();
         ModItemGroup.registerModItemGroup();
+        ModBlocks.registerModBlocks();
     }
 }

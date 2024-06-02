@@ -1,6 +1,7 @@
 package com.scorpio4938.fantasia.item;
 
 import com.scorpio4938.fantasia.Fantasia;
+import com.scorpio4938.fantasia.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,6 +16,7 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.fantasia_misc"))
                     .icon(() -> new ItemStack(ModItems.WIT_COIN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.WIT_COIN);
+                        entries.add(ModBlocks.CITY_CENTER_BLOCK);
                     }).build());
 
     public static void registerModItemGroup() {
