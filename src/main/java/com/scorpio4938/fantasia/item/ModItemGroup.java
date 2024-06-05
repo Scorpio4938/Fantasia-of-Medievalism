@@ -17,6 +17,7 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.WIT_COIN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.WIT_COIN);
                         entries.add(ModBlocks.CITY_CENTER_BLOCK);
+                        entries.add(ModItems.MASLIN_BREAD);
                     }).build());
 
     public static void registerModItemGroup() {

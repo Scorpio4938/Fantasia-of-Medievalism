@@ -14,6 +14,9 @@ public class ModItems {
     // economy
     public static final Item WIT_COIN = registerItems("wit_coin", new Item(new FabricItemSettings()));
 
+    // food
+    public static final Item MASLIN_BREAD = registerItems("maslin_bread", new Item(new FabricItemSettings().food(ModFoodComponents.RYE_BREAD)));
+
     private static void addItemsToItemGroup(FabricItemGroupEntries fabricItemGroupEntries) {
         fabricItemGroupEntries.add(WIT_COIN);
     }
