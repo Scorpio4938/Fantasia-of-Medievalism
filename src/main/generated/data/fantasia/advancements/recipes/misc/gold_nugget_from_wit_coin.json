@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:wit_coin"
+        "recipe": "minecraft:gold_nugget_from_wit_coin"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:wit_coin"
+      "minecraft:gold_nugget_from_wit_coin"
     ]
   },
   "sends_telemetry_event": false

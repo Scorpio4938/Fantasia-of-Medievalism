@@ -24,7 +24,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.GOLD_NUGGET, 4)
                 .input(ModItems.WIT_COIN, 1)
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.WIT_COIN)));
+                .offerTo(exporter, new Identifier("gold_nugget_from_wit_coin"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CITY_CENTER_BLOCK, 1)
                 .pattern("IBI")
                 .pattern("T#W")
