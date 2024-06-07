@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:crafting_table"
+    },
+    "B": {
+      "item": "minecraft:bookshelf"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "T": {
+      "item": "minecraft:iron_shovel"
+    },
+    "W": {
+      "item": "minecraft:iron_axe"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "T#W",
+    "ILI"
+  ],
+  "result": {
+    "item": "fantasia:city_center_block"
+  },
+  "show_notification": true
+}
