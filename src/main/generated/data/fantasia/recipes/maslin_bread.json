@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "fantasia:sawdust"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "WSW"
+  ],
+  "result": {
+    "count": 2,
+    "item": "fantasia:maslin_bread"
+  },
+  "show_notification": true
+}

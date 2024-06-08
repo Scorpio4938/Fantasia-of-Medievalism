@@ -1,5 +1,9 @@
-// 1.20	2024-06-07T18:26:38.0329156	Fantasia of Medievalism/Recipes
+// 1.20	2024-06-08T18:24:40.6121282	Fantasia of Medievalism/Recipes
+60663a886805962c1a447ba149f6af0ce01ab3c4 data\fantasia\advancements\recipes\food\maslin_bread.json
 f1629e0a070817cbfb7dd35fc805af11441e3248 data\fantasia\advancements\recipes\misc\city_center_block.json
+03241dd72903f8c8e56407c88306c5ced4290cdd data\fantasia\recipes\sawdust_from_logs.json
+c42a34c84094efc4cddba4f3576ca694f38aeba6 data\fantasia\advancements\recipes\misc\sawdust_from_logs.json
 f4e4ea49483521a09d3a93e98f69d47b9365de9d data\fantasia\recipes\gold_nugget_from_wit_coin.json
 f012132e548e17288031484bcee4c624bc516a01 data\fantasia\recipes\city_center_block.json
 60307f2573da72fbfdf085af049a168540b68d9f data\fantasia\advancements\recipes\misc\gold_nugget_from_wit_coin.json
+f86f2986dd58b7f4f7346201e14972128bcb1083 data\fantasia\recipes\maslin_bread.json

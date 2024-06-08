@@ -17,6 +17,12 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.WIT_COIN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.WIT_COIN);
                         entries.add(ModBlocks.CITY_CENTER_BLOCK);
+                        entries.add(ModItems.SAWDUST);
+                    }).build());
+    public static final ItemGroup FANTASIA_FOOD = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Fantasia.MOD_ID, "fantasia_food"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.fantasia_food"))
+                    .icon(() -> new ItemStack(ModItems.MASLIN_BREAD)).entries((displayContext, entries) -> {
                         entries.add(ModItems.MASLIN_BREAD);
                     }).build());
 

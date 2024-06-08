@@ -25,5 +25,6 @@ public class ModModelsProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.WIT_COIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.MASLIN_BREAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SAWDUST, Models.GENERATED);
     }
 }
