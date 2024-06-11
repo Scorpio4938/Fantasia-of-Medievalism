@@ -5,4 +5,4 @@ minecraft. The word "Medievalism" in the name of this repo only means the histor
 
 ## License
 
-The MIT License
+The [MIT](https://github.com/Scorpio4938/Fantasia-of-Medievalism/blob/master/LICENSE) License
