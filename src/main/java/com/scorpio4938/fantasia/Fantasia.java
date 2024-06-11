@@ -1,10 +1,13 @@
 package com.scorpio4938.fantasia;
 
 import com.scorpio4938.fantasia.block.ModBlocks;
+import com.scorpio4938.fantasia.entity.ModEntities;
+import com.scorpio4938.fantasia.entity.custom.PestilenceZombieEntity;
 import com.scorpio4938.fantasia.item.ModItemGroup;
 import com.scorpio4938.fantasia.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,5 +28,7 @@ public class Fantasia implements ModInitializer {
         ModItems.registerModItems();
         ModItemGroup.registerModItemGroup();
         ModBlocks.registerModBlocks();
+
+        FabricDefaultAttributeRegistry.register(ModEntities.PestilenceZombie, PestilenceZombieEntity.createPestilenceZombieAttributes()); // entity extend zombie issue of bug
     }
 }
