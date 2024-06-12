@@ -1,20 +1,25 @@
 package com.scorpio4938.fantasia.entity.client;
 
+import com.scorpio4938.fantasia.entity.animation.PestilenceZombieAnimation;
 import com.scorpio4938.fantasia.entity.custom.PestilenceZombieEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.util.math.MathHelper;
 
 // Made with Blockbench 4.10.3
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
+
 // Note. The model parts (folders in Blockbench) from Blockbench could create issues which minecraft client cannot read this model
 public class PestilenceZombieModel<T extends PestilenceZombieEntity> extends SinglePartEntityModel<T> {
     private final ModelPart pestilence_zombie;
+    private final ModelPart head;
 
     public PestilenceZombieModel(ModelPart root) {
         this.pestilence_zombie = root.getChild("pestilence_zombie");
+        this.head = pestilence_zombie.getChild("body").getChild("torso").getChild("head"); // Note. Cannot write in form "body/torso/head" or "body.torso.head" that will cause the resource load failed (and also 'resource reload failed' after mc tries to reload the progress bar)
     }
 
     public static TexturedModelData getTexturedModelData() {
@@ -49,6 +54,18 @@ public class PestilenceZombieModel<T extends PestilenceZombieEntity> extends Sin
 
     @Override
     public void setAngles(PestilenceZombieEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        this.getPart().traverse().forEach(ModelPart::resetTransform);
+        this.setHeadAngles(netHeadYaw, headPitch);
+
+        this.animateMovement(PestilenceZombieAnimation.WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+        this.updateAnimation(entity.idleAnimationState, PestilenceZombieAnimation.IDLE, ageInTicks, 1f);
+    }
+
+    private void setHeadAngles(float headAngles, float headPitch) {
+        headAngles = MathHelper.clamp(headAngles, -25.0F, 25.0F);
+        headPitch = MathHelper.clamp(headPitch, -25.0F, 40.0F);
+        this.head.yaw = headAngles * 0.017453292F;
+        this.head.pitch = headPitch * 0.017453292F;
     }
 
     @Override

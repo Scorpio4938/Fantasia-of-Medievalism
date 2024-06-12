@@ -1,6 +1,8 @@
 package com.scorpio4938.fantasia.entity.custom;
 
 import com.scorpio4938.fantasia.entity.ModEntities;
+import net.minecraft.entity.AnimationState;
+import net.minecraft.entity.EntityPose;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -16,6 +18,19 @@ import org.jetbrains.annotations.Nullable;
 
 public class PestilenceZombieEntity extends AnimalEntity {
 
+    public final AnimationState idleAnimationState = new AnimationState();
+
+    private int idleAnimationTimeOut = 0;
+
+    private void setUpAnimationState() {
+        if (this.idleAnimationTimeOut <= 0) {
+            this.idleAnimationTimeOut = this.random.nextInt(40) + 80;
+            this.idleAnimationState.start(this.age);
+        } else {
+            --this.idleAnimationTimeOut;
+        }
+    }
+
     public PestilenceZombieEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -23,6 +38,15 @@ public class PestilenceZombieEntity extends AnimalEntity {
     @Override
     public void tick() {
         super.tick();
+        if (this.getWorld().isClient) {
+            setUpAnimationState();
+        }
+    }
+
+    @Override
+    protected void updateLimbs(float posDelta) {
+        float f = this.getPose() == EntityPose.STANDING ? Math.min(posDelta * 6.0f, 1.0f) : 0.0f;
+        this.limbAnimator.updateLimbs(f, 0.2f);
     }
 
     @Override
