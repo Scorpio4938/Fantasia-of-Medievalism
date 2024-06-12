@@ -1,17 +1,22 @@
 package com.scorpio4938.fantasia.entity.custom;
 
+import com.scorpio4938.fantasia.entity.ModEntities;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.mob.ZombieEntity;
+import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
-public class PestilenceZombieEntity extends ZombieEntity {
+public class PestilenceZombieEntity extends AnimalEntity {
 
-
-    public PestilenceZombieEntity(EntityType<? extends ZombieEntity> entityType, World world) {
+    public PestilenceZombieEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -40,5 +45,14 @@ public class PestilenceZombieEntity extends ZombieEntity {
 
     }
 
+    @Override
+    public boolean isBreedingItem(ItemStack stack) {
+        return stack.isOf(Items.ROTTEN_FLESH);
+    }
 
+    @Nullable
+    @Override
+    public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
+        return ModEntities.PESTILENCEZOMBIE.create(world);
+    }
 }
