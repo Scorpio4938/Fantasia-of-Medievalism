@@ -12,7 +12,7 @@ public class FantasiaClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PESTILENCEZOMBIE, PestilenceZombieModel::getTexturedModelData); // entity extend zombie issue of bug
-        EntityRendererRegistry.register(ModEntities.PESTILENCEZOMBIE, PestilenceZombieRenderer::new); // entity extend zombie issue of bug
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PESTILENCE_ZOMBIE, PestilenceZombieModel::getTexturedModelData); // entity extend zombie issue of bug
+        EntityRendererRegistry.register(ModEntities.PESTILENCE_ZOMBIE, PestilenceZombieRenderer::new); // entity extend zombie issue of bug
     }
 }

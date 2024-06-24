@@ -3,5 +3,6 @@
   "item.fantasia.maslin_bread": "Maslin",
   "item.fantasia.sawdust": "Sawdust",
   "block.fantasia.city_center_block": "City Center",
-  "itemGroup.fantasia_misc": "Fantasia:Misc"
+  "itemGroup.fantasia_misc": "Fantasia:Misc",
+  "entity.fantasia.pestilence_zombie": "Pestilence Zombie"
 }

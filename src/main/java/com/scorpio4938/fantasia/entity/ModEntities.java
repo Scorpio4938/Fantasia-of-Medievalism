@@ -11,7 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModEntities {
-    public static final EntityType<PestilenceZombieEntity> PESTILENCEZOMBIE = Registry.register(Registries.ENTITY_TYPE,
+    public static final EntityType<PestilenceZombieEntity> PESTILENCE_ZOMBIE = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(Fantasia.MOD_ID, "pestilence_zombie"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, PestilenceZombieEntity::new)
                     .dimensions(EntityDimensions.fixed(1f, 1f)).build());

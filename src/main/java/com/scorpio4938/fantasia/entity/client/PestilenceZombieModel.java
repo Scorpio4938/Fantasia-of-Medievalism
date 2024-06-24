@@ -31,10 +31,10 @@ public class PestilenceZombieModel<T extends PestilenceZombieEntity> extends Sin
 
         ModelPartData torso = body.addChild("torso", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, 0.0F, 0.0F));
 
-        ModelPartData head = torso.addChild("head", ModelPartBuilder.create().uv(0, 16).cuboid(0.0F, -32.0F, -4.0F, 4.0F, 8.0F, 7.0F, new Dilation(0.0F))
-                .uv(0, 31).cuboid(-4.0F, -31.0F, -4.0F, 1.0F, 7.0F, 7.0F, new Dilation(0.0F))
-                .uv(0, 45).cuboid(-3.0F, -29.0F, -4.0F, 3.0F, 5.0F, 4.0F, new Dilation(0.0F))
-                .uv(24, 0).cuboid(-3.0F, -32.0F, -4.0F, 3.0F, 3.0F, 7.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 0.0F, 0.0F));
+        ModelPartData head = torso.addChild("head", ModelPartBuilder.create().uv(0, 16).cuboid(0.0F, -8.0F, -4.0F, 4.0F, 8.0F, 7.0F, new Dilation(0.0F))
+                .uv(0, 31).cuboid(-4.0F, -7.0F, -4.0F, 1.0F, 7.0F, 7.0F, new Dilation(0.0F))
+                .uv(0, 45).cuboid(-3.0F, -5.0F, -4.0F, 3.0F, 5.0F, 4.0F, new Dilation(0.0F))
+                .uv(24, 0).cuboid(-3.0F, -8.0F, -4.0F, 3.0F, 3.0F, 7.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, -24.0F, 0.0F));
 
         ModelPartData bone = torso.addChild("bone", ModelPartBuilder.create().uv(0, 0).cuboid(-4.0F, -24.0F, -2.0F, 8.0F, 12.0F, 4.0F, new Dilation(0.0F))
                 .uv(34, 29).cuboid(-4.0F, -22.0F, 2.0F, 8.0F, 8.0F, 2.0F, new Dilation(0.0F))
@@ -59,6 +59,7 @@ public class PestilenceZombieModel<T extends PestilenceZombieEntity> extends Sin
 
         this.animateMovement(PestilenceZombieAnimation.WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
         this.updateAnimation(entity.idleAnimationState, PestilenceZombieAnimation.IDLE, ageInTicks, 1f);
+        this.updateAnimation(entity.attackAnimationState, PestilenceZombieAnimation.ATTACK, ageInTicks, 1f);
     }
 
     private void setHeadAngles(float headAngles, float headPitch) {
