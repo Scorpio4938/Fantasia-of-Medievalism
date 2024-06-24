@@ -1,6 +1,6 @@
 # v0.0 Basic
 
-## [in-plan] v0.0.1 Basic Worldgen
+## [dev] v0.0.1 Basic Worldgen
 
 ### Features
 
