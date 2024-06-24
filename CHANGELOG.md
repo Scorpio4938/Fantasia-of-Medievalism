@@ -13,6 +13,6 @@
 
 ### Features
 
-- Basic items & blocks. ([89ab42b](https://github.com/Scorpio4938/Fantasia-of-Medievalism/actions/runs/9428093947))
-- Datagen. ([e2df366](https://github.com/Scorpio4938/Fantasia-of-Medievalism/actions/runs/9414333105))
-- The first animal. (25e39e7)
+- Basic items & blocks. ([89ab42b](https://github.com/Scorpio4938/Fantasia-of-Medievalism/commit/89ab42b8f280e9cf5afbed6bea53305f40b05c82))
+- Datagen. ([e2df366](https://github.com/Scorpio4938/Fantasia-of-Medievalism/commit/e2df3666f35dbd21a21acbb15e9de0c06e544de8))
+- The first animal. ([25e39e7](https://github.com/Scorpio4938/Fantasia-of-Medievalism/commit/25e39e7e0c7a13e700c73b1c2504590827100149))
