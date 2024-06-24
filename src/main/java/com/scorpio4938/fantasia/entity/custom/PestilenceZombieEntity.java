@@ -20,7 +20,7 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class PestilenceZombieEntity extends AnimalEntity {
+public class PestilenceZombieEntity extends AnimalEntity { // This should be a ZombieEntity type.
     private static final TrackedData<Boolean> ATTACKING =
             DataTracker.registerData(PestilenceZombieEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 
