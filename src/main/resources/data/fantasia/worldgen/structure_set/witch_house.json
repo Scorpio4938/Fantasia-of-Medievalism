@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "fantasia:witch_house",
+      "structure": "fantasia:small_witch_house",
       "weight": 1
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
     "salt": 1543899564,
-    "spacing": 15,
-    "separation": 4
+    "spacing": 25,
+    "separation": 6
   }
 }
