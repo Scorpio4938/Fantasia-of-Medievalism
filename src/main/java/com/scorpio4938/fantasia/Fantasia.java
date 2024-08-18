@@ -32,6 +32,6 @@ public class Fantasia implements ModInitializer {
 
         FabricDefaultAttributeRegistry.register(ModEntities.PESTILENCE_ZOMBIE, PestilenceZombieEntity.createPestilenceZombieAttributes()); // entity extend zombie issue of bug
 
-        EventHandler.registerEventHandler();
+//        EventHandler.registerEventHandler();
     }
 }
