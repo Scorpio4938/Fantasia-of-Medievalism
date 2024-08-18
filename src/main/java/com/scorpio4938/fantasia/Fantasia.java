@@ -5,6 +5,7 @@ import com.scorpio4938.fantasia.entity.ModEntities;
 import com.scorpio4938.fantasia.entity.custom.PestilenceZombieEntity;
 import com.scorpio4938.fantasia.item.ModItemGroup;
 import com.scorpio4938.fantasia.item.ModItems;
+import com.scorpio4938.fantasia.service.event.EventHandler;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -30,5 +31,7 @@ public class Fantasia implements ModInitializer {
         ModBlocks.registerModBlocks();
 
         FabricDefaultAttributeRegistry.register(ModEntities.PESTILENCE_ZOMBIE, PestilenceZombieEntity.createPestilenceZombieAttributes()); // entity extend zombie issue of bug
+
+        EventHandler.registerEventHandler();
     }
 }
