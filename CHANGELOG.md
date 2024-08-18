@@ -4,8 +4,8 @@
 
 ### Features
 
-- Add global config.
 - Init game world with administrative division that has basic info and structure (seed-based), and maybe worldgen.
+- Add global config. ([ce6b375](https://github.com/Scorpio4938/Fantasia-of-Medievalism/commit/ce6b3758477907cd215e8ff9eab95e0a693cf021))
 - Basic building-gen tryout.
   - A data structure for a flexible urban area (with basic building generation and data structure).
   - Wild structure tryout. ([23c5abe](https://github.com/Scorpio4938/Fantasia-of-Medievalism/commit/23c5abe933e1f8b37aa1cd76a3864db9607a1ffc))
